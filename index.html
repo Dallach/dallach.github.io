@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌈 DAVID'S WORLD 🌈</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            background: linear-gradient(45deg, #000000, #111, #111, #111);
+            background-size: 400% 400%;
+            min-height: 100vh;
+            color: #00ff00;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;    
+            position: relative;
+            background: rgba(0, 0, 0, 0.8);
+            border: 5px solid #00ff00;
+            padding: 2rem;
+            box-shadow: 10px 10px 0px #000000;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .project-card {
+            background: rgba(0, 0, 0, 0.85);
+            border: 4px solid #00ff00;
+            padding: 1.5rem;
+            position: relative;
+            text-decoration: none;
+            color: #00ff00;
+            display: block;
+            transition: all 0.3s ease;
+            box-shadow: 8px 8px 0px rgba(255, 69, 0, 0.5);
+            transform: rotate(0deg);
+        }
+
+        .project-card:nth-child(odd) {
+            transform: rotate(-2deg);
+            background: rgba(20, 20, 0, 0.9);
+            border-color: #ffff00;
+            color: #ffff00;
+        }
+        .project-card:nth-child(1) {
+            background-image:  url('guesstimage-preview.png');
+            background-size: contain;
+            background-position: right;  
+            background-repeat: no-repeat;
+        }
+
+        .project-card:nth-child(even) {
+            transform: rotate(1deg);
+            background: rgba(0, 20, 20, 0.9);
+            border-color: #00ffff;
+            color: #00ffff;
+        }
+
+        .project-card:hover {
+            transform: rotate(0deg) scale(1.05);
+            box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+
+        .footer {
+            text-align: center;
+        }
+        .visitor-counter {
+            bottom: 20px;
+            right: 20px;    
+            color: #00ff00;
+            padding: 0.5rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            z-index: 1000;
+        }
+
+        .inline-img {
+            vertical-align: middle;
+            display: inline;    
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .projects-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+        @media (max-width: 1300px) {
+            .sticker {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero">
+            <h1>David's Stuff</h1>
+        </div>
+
+        <div class="projects-container">
+            <a href="http://davidsduelingdistributions.com" class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">David's Dueling Distributions</h3>
+                </div>
+            </a>
+
+            <a href="#" class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Pitch Monitor</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="visitor-counter">
+            <div align=center><img src='https://www.counter12.com/img-b1w1AxCDW82BcYAy-26.gif' border='0' class="inline-img"><script type='text/javascript' src='https://www.counter12.com/ad.js?id=b1w1AxCDW82BcYAy'></script> page views</div>
+        </div>
+    </div>
+</body>
+</html>
