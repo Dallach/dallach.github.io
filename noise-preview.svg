@@ -1,0 +1,82 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.5" r="0.8">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0b0b0b"/>
+    </radialGradient>
+    
+    <linearGradient id="flow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.7"/>
+      <stop offset="25%" stop-color="#f7931e" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#ffcd3c" stop-opacity="0.4"/>
+      <stop offset="75%" stop-color="#ff6b35" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c44569" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <linearGradient id="flow2" x1="100%" y1="30%" x2="0%" y2="70%">
+      <stop offset="0%" stop-color="#c44569" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#f8b500" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#ff6b35" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffcd3c" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <linearGradient id="flow3" x1="20%" y1="100%" x2="80%" y2="0%">
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#ffcd3c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f7931e" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1" result="softBlur"/>
+      <feMerge> 
+        <feMergeNode in="softBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Large flowing organic shapes with more natural proportions -->
+  <path d="M8,30 Q25,10 50,18 Q75,26 100,22 Q125,18 150,25 Q175,32 192,30 Q185,45 160,50 Q130,55 100,52 Q70,49 40,45 Q15,40 8,30 Z" 
+        fill="url(#flow1)" 
+        filter="url(#glow)"
+        opacity="0.6"/>
+        
+  <path d="M12,35 Q35,15 65,20 Q95,25 125,22 Q155,19 180,28 Q190,40 170,48 Q140,56 110,53 Q80,50 50,46 Q25,42 12,35 Z" 
+        fill="url(#flow2)" 
+        filter="url(#glow)"
+        opacity="0.4"/>
+        
+  <path d="M15,25 Q45,8 75,15 Q105,22 135,18 Q165,14 188,25 Q185,38 155,45 Q125,52 95,48 Q65,44 35,38 Q15,32 15,25 Z" 
+        fill="url(#flow3)" 
+        filter="url(#softGlow)"
+        opacity="0.3"/>
+        
+  <!-- Central energy spots with better proportions -->
+  <circle cx="100" cy="30" r="4" 
+          fill="#ffcd3c" 
+          opacity="0.4" 
+          filter="url(#softGlow)"/>
+           
+  <circle cx="75" cy="35" r="5" 
+          fill="#ff6b35" 
+          opacity="0.3" 
+          filter="url(#softGlow)"/>
+           
+  <!-- Scattered noise-like elements -->
+  <circle cx="40" cy="20" r="1.5" fill="#fff" opacity="0.3"/>
+  <circle cx="130" cy="15" r="2" fill="#ff6b35" opacity="0.4"/>
+  <circle cx="160" cy="35" r="1.2" fill="#f7931e" opacity="0.3"/>
+  <circle cx="50" cy="45" r="1.8" fill="#ffcd3c" opacity="0.4"/>
+  <circle cx="170" cy="48" r="1" fill="#fff" opacity="0.25"/>
+  <circle cx="25" cy="35" r="1.3" fill="#c44569" opacity="0.3"/>
+  <circle cx="115" cy="50" r="1.6" fill="#f8b500" opacity="0.35"/>
+  <circle cx="85" cy="18" r="1.1" fill="#ffcd3c" opacity="0.3"/>
+</svg>
