@@ -1,0 +1,22 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black background -->
+  <rect width="32" height="32" fill="#000000"/>
+  
+  <!-- Neon green border -->
+  <rect x="1" y="1" width="30" height="30" fill="none" stroke="#00ff00" stroke-width="2"/>
+  
+  <!-- Letter D in retro pixel style -->
+  <g fill="#00ff00">
+    <!-- Main vertical line of D -->
+    <rect x="11" y="8" width="2" height="16"/>
+    <!-- Top horizontal line -->
+    <rect x="13" y="8" width="6" height="2"/>
+    <!-- Bottom horizontal line -->
+    <rect x="13" y="22" width="6" height="2"/>
+    <!-- Right vertical connecting lines -->
+    <rect x="19" y="10" width="2" height="2"/>
+    <rect x="21" y="12" width="2" height="8"/>
+    <rect x="19" y="20" width="2" height="2"/>
+  </g>
+
+</svg>
